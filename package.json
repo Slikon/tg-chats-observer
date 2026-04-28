@@ -1,0 +1,27 @@
+{
+  "name": "telegram-bot-observer",
+  "version": "1.0.0",
+  "description": "Telegram user-session observer for keyword-triggered alerts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts",
+    "session:init": "tsx src/session-init.ts",
+    "dialogs:list": "tsx src/list-dialogs.ts"
+  },
+  "keywords": [
+    "telegram",
+    "gramjs",
+    "observer"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
